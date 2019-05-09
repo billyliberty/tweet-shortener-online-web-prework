@@ -20,7 +20,7 @@ def word_substituter(tweet)
   words.map do |word|
     translate.map do |k, v|
       if word == k
-        word.replace(value)
+        word.replace(v)
       end
     end
   end

@@ -19,7 +19,7 @@ def word_substituter(tweet)
   words = tweet.split(" ")
   words.map do |word|
     translate.map do |k, v|
-      if word = k
+      if word == k
         word.replace(value)
       end
     end
@@ -47,4 +47,4 @@ def shortened_tweet_truncator(tweet)
   else
     word_substituter(tweet)
   end
-end 
+end

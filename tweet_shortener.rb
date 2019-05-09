@@ -17,14 +17,12 @@ end
 
 
 def word_substituter(tweet)
-
   words = tweet.split(" ")
   translate = dictionary
-
-  words.collect do |word|
-    dictionary.collect do |key, value|
-      if word == key
-        word.replace(value)
+  words.map do |word|
+    dictionary.map do |k, v|
+      if word == k
+        word.replace(v)
       end
     end
   end

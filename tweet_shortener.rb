@@ -17,7 +17,7 @@ end
 
 
 def word_substituter(tweet)
-  
+
   words = tweet.split(" ")
 
   words.collect do |word|
@@ -55,4 +55,4 @@ def shortened_tweet_truncator(tweet)
   else
     word_substituter(tweet)
   end
-end 
+end

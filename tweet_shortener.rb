@@ -1,5 +1,5 @@
 def dictionary
-  dict = {
+  dictionary = {
     "hello" => 'hi',
     "to"=> "2",
     "too"=> "2",

@@ -1,5 +1,5 @@
 def dictionary
-  translate = {
+  dictionary = {
     "hello" => 'hi',
     "to"=> "2",
     "too"=> "2",
@@ -18,9 +18,9 @@ end
 
 def word_substituter(tweet)
   words = tweet.split(" ")
-  translate = tweet_dictionary
+  dictionary = translate
   words.map do |word|
-    tweet_dictionary.map do |k, v|
+    translate.map do |k, v|
       if word == k
         word.replace(v)
       end
